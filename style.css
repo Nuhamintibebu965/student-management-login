@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.0.3');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #f4f4f9;
+}
+
+.hero-section {
+    background: url("image/1-1280-800.jpg") center/cover no-repeat;
+    min-height: 200px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.intro-section, .login-section {
+    max-width: 460px;
+    width: 100%;
+}
+
+.intro-section {
+    color: white;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.main-title {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.divider {
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    margin: 15px 0;
+}
+
+.intro-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.login-section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    color: rgb(72, 0, 255);
+    margin-bottom: 20px;
+}
+
+.login-box {
+    padding: 10px;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.input-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+    border-right: none;
+    font-size: 14px;
+}
+
+.input-field {
+    flex: 1;
+    border: 1px solid #ccc;
+    background: #ecf0f8;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 14px;
+    border-radius: 0 4px 4px 0;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.primary-btn, .secondary-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.primary-btn {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.secondary-btn {
+    background-color: white;
+    color: black;
+    border: none;
+}
+.primary-btn:hover {
+    background-color: #005d7c;
+}
+
+.secondary-btn:hover {
+    background-color: #a6a6a6;
+}
+
+.forgot-password {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.grid-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    background: #ecf0f8;
+    padding: 15px;
+}
+
+.grid-item {
+    background: white;
+    color: #7d7d7d;
+    font-size: 12px;
+    padding: px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid-item div {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: inherit; /* Remove icon color */
+    
+    
+}
+
+.grid-item a {
+    text-decoration: none;
+}
+
+.fa.fa-calendar, .fa.fa-commenting, .fa.fa-laptop, .fa.fa-cloud, .fa.fa-user-circle {
+    font-size: 25px;
+    color:none;
+    transition: color 300ms;
+}
+
+.menu-text {
+    font-size: 10px;
+    text-align: center;
+    color: #7d7d7d;
+    margin: 3.2px 0 5px;
+}
+@media (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Styles for tablets (landscape) and medium-sized screens */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .intro-section, .login-section {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    
+    .grid-menu {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 10px;
+    }
+}
+
+/* Styles for tablets (portrait) and small-sized screens */
+@media (max-width: 767px) and (min-width: 481px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .intro-section, .login-section {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    
+    .grid-menu {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 10px;
+    }
+}
+
+/* Styles for smartphones and very small screens */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .intro-section, .login-section {
+        padding: 0 10px;
+    }
+    
+    .intro-text {
+        font-size: 14px;
+    }
+    
+    .grid-menu {
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+    
+    .grid-item {
+        padding: 10px;
+    }
+}
