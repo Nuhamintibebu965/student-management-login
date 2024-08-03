@@ -1,0 +1,29 @@
+# Operating system generated
+Thumbs.db
+desktop.ini
+
+# IDE-specific files
+.vscode/
+*.suo
+*.user
+*.sln
+*.dll
+*.pdb
+*.tmp
+*.log
+*.obj
+*.exe
+*.lib
+*.git
+*.DS_Store
+
+# Log files
+logs/
+*.log
+
+# Build artifacts
+build/
+dist/
+
+# Node modules
+node_modules/
